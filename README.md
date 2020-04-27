@@ -14,6 +14,8 @@ The backend server will provide web API so that a front end webpage (dashboard) 
 Prepare a dashboard that can show the history of the status of FTP operations.
 """
 
+//=====================================================================================================================
+
 Since its code test and i would like to explain what i have did and some assumption on it step by step.
 
 My technical Spec:
@@ -27,6 +29,8 @@ My technical Spec:
  2. i assume that the security requirement is not high
  3. The purpose of this project is to better understand each other.
  4. since it store ftp operation record, i assume that no delete, update operation to database, but insert and query or read only
+ 
+ //=====================================================================================================================
  
  About the project structure:
  app
@@ -45,6 +49,8 @@ My technical Spec:
     ...
  server.js  :   this is the main server file that run by node.js (can run by command "forever start server.js")
  
+ //=====================================================================================================================
+ 
  About what i have done:
  1. the server send the demo_file"test_chung_file.txt" to the FTP server "https://dlptest.com/ftp-test/" at 5:00 PM every Monday to Friday
     Feel free to have a look at files
@@ -60,7 +66,20 @@ My technical Spec:
  5. A simplest dashboard that display the history of the status of FTP operations.
     "server.js", "index.html", "index.js"
   
- 
+//=====================================================================================================================
+
+Guide to install
+1. need to install node.js and npm 
+https://nodejs.org/en/
+2. need to install monogdb
+https://www.mongodb.com/
+3. run "npm install"
+so it will install all modules listed as dependencies in "package.json"
+4. install forever
+https://www.npmjs.com/package/forever
+
+Guide to run
+1. run "forever start server.js"
 
 
 
