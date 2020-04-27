@@ -18,39 +18,38 @@ Prepare a dashboard that can show the history of the status of FTP operations.
 
 Since its code test and i would like to explain what i have did and some assumption on it step by step.
 
-My technical Spec:
-  Mongodb
-  Express.js
-  Angular.js
-  Node.js
+##My technical Spec:
+ >Mongodb
+ >Express.js
+ >Angular.js
+ >Node.js
   
- Assumption on this code test
+ ##Assumption on this code test
  1. i assume that the cocurrent peak user is not many (below 20)
  2. The purpose of this project is to better understand each other.
  3. since it store ftp operation record, i assume that no delete, update operation to database, but insert and query or read only
  
  //=====================================================================================================================
  
- About the project structure:
- app
-    index.html    :    frontend static file using angular.js
-    index.js      :    the frontend controller using angular.js
-    models
-        ftp_operation.js   :   its data model and define the schema of database
- email_wrapper.js  :   its the file that wrap the ftp related function or script
- file_to_be_sent
-      test_chung_file.txt   :   this is the demo_file to be sent to the FTP server 5:00pm every working days
- ftp_wrapper.js   :   its the file that wrap the ftp related function or script
- general.js   :   some general functions are called everywhere
- mongodb_function.js    :   this is some function related to Mongodb (insert or other operation)
- mongodb_interface.js   :   this is the Restful API related to Database Mongodb (query)
- node_modules  :  this is package management folder, (use npm to install the module)
-    ...
- server.js  :   this is the main server file that run by node.js (can run by command "forever start server.js")
+ ##About the project structure:
+app
+  index.html    :    frontend static file using angular.js
+  index.js      :    the frontend controller using angular.js
+models
+  ftp_operation.js   :   its data model and define the schema of database
+email_wrapper.js  :   its the file that wrap the ftp related function or script
+file_to_be_sent 
+  test_chung_file.txt   :   this is the demo_file to be sent to the FTP server 5:00pm every working days
+ftp_wrapper.js   :   its the file that wrap the ftp related function or script
+general.js   :   some general functions are called everywhere
+mongodb_function.js    :   this is some function related to Mongodb (insert or other operation)
+mongodb_interface.js   :   this is the Restful API related to Database Mongodb (query)
+node_modules  :  this is package management folder, (use npm to install the module)
+server.js  :   this is the main server file that run by node.js (can run by command "forever start server.js")
  
  //=====================================================================================================================
  
- About what i have done:
+ ##About what i have done:
  1. the server send the demo_file"test_chung_file.txt" to the FTP server "https://dlptest.com/ftp-test/" at 5:00 PM every Monday to Friday
     Feel free to have a look at files
       "server.js", "ftp_wrapper.js"
@@ -67,7 +66,7 @@ My technical Spec:
   
 //=====================================================================================================================
 
-Guide to install
+##Guide to install
 1. need to install node.js and npm 
 https://nodejs.org/en/
 2. need to install monogdb
@@ -77,7 +76,7 @@ so it will install all modules listed as dependencies in "package.json"
 4. install forever
 https://www.npmjs.com/package/forever
 
-Guide to run
+##Guide to run
 1. run "forever start server.js"
 
 
