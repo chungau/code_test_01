@@ -25,10 +25,9 @@ My technical Spec:
   Node.js
   
  Assumption on this code test
- 1. i assume that the cocurrent peak user is not high (below 20)
- 2. i assume that the security requirement is not high
- 3. The purpose of this project is to better understand each other.
- 4. since it store ftp operation record, i assume that no delete, update operation to database, but insert and query or read only
+ 1. i assume that the cocurrent peak user is not many (below 20)
+ 2. The purpose of this project is to better understand each other.
+ 3. since it store ftp operation record, i assume that no delete, update operation to database, but insert and query or read only
  
  //=====================================================================================================================
  
