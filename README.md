@@ -32,20 +32,20 @@ Since its code test and i would like to explain what i have did and some assumpt
  //=====================================================================================================================
  
  ##About the project structure:
-app
-  index.html    :    frontend static file using angular.js
-  index.js      :    the frontend controller using angular.js
-models
-  ftp_operation.js   :   its data model and define the schema of database
-email_wrapper.js  :   its the file that wrap the ftp related function or script
-file_to_be_sent 
-  test_chung_file.txt   :   this is the demo_file to be sent to the FTP server 5:00pm every working days
-ftp_wrapper.js   :   its the file that wrap the ftp related function or script
-general.js   :   some general functions are called everywhere
-mongodb_function.js    :   this is some function related to Mongodb (insert or other operation)
-mongodb_interface.js   :   this is the Restful API related to Database Mongodb (query)
-node_modules  :  this is package management folder, (use npm to install the module)
-server.js  :   this is the main server file that run by node.js (can run by command "forever start server.js")
+* app
+* app/index.html    :    frontend static file using angular.js
+* app/index.js      :    the frontend controller using angular.js
+* app/models
+* app/models/ftp_operation.js   :   its data model and define the schema of database
+* email_wrapper.js  :   its the file that wrap the ftp related function or script
+* file_to_be_sent 
+* file_to_be_sent/test_chung_file.txt   :  demo file to be sent to the FTP server 5:00pm every working days
+* ftp_wrapper.js   :   file that wrap the ftp related function or script
+* general.js   :   some general functions are called everywhere
+* mongodb_function.js    :   some function related to Mongodb (insert or other operation)
+* mongodb_interface.js   :   the Restful API related to Database Mongodb (query)
+* node_modules  :  this is package management folder, (use npm to install the module)
+* server.js  :   this is the main server file that run by node.js (can run by command "forever start server.js")
  
  //=====================================================================================================================
  
